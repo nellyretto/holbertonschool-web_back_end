@@ -23,4 +23,4 @@ def to_kv(k: str, v: OR) -> Tuple[str, float]:
         Tuple[str, float]: A tuple containing the key and the value.
 
     """
-    return k, v
+    return k, v**2
