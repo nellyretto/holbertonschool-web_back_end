@@ -5,7 +5,7 @@ import math
 """
 
 
-def floor(n: float) -> float:
+def floor(n: float) -> int:
     """
     Returns the largest integer less than or equal to a given number.
 
