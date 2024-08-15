@@ -29,4 +29,4 @@ def task_wait_random(max_delay: int):
     expected to return a random
     delay within the specified maximum.
     """
-    return asyncio.Task(wait_random(max_delay))
+    return asyncio.create_task(wait_random(max_delay))
