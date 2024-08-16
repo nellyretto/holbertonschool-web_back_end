@@ -1,18 +1,16 @@
 #!/usr/bin/env python3
 
-import asyncio
-wait_random = __import__("0-basic_async_syntax").wait_random
-
 """
 Imports the `wait_random` function from the module '0-basic_async_syntax'.
 This function is assumed to be defined in a separate file and
 returns a random delay.
 """
 
+import asyncio
+wait_random = __import__("0-basic_async_syntax").wait_random
+
 
 def task_wait_random(max_delay: int) -> asyncio.Task:
-
-
     """
     Defines an asynchronous task that calls the `wait_random` function.
 
