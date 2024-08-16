@@ -11,7 +11,7 @@ returns a random delay.
 """
 
 
-def task_wait_random(max_delay: int):
+def task_wait_random(max_delay: int) -> asyncio.Task:
     """
     Defines an asynchronous task that calls the `wait_random` function.
 
@@ -21,7 +21,7 @@ def task_wait_random(max_delay: int):
 
     Returns:
         asyncio.Task: An asyncio Task object representing the
-        \asynchronous operation.
+        asynchronous operation.
 
     This function creates an asyncio Task object that executes
     the `wait_random` function
