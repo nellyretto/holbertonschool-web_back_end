@@ -5,7 +5,6 @@ programming, random number generation, and type hinting
 """
 
 
-
 import asyncio
 import random
 from typing import AsyncGenerator
