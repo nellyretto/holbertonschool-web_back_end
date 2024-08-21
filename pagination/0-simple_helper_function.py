@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
-
+"""The typing module is imported to provide type hints for the
+index_range function,
+which helps improve code readability and maintainability"""
 from typing import Tuple
 
 
