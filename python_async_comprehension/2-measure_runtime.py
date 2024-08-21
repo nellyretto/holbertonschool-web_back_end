@@ -28,10 +28,10 @@ async def measure_runtime() -> float:
     Records the start and end times, then returns the elapsed time in seconds.
     """
 
-    start_time = time.time()
+    start_time = time.perf_counter()
 
     await asyncio.gather(*(async_comprehension() for i in range(4)))
 
-    end_time = time.time()
+    end_time = time.perf_counter()
 
     return end_time - start_time
