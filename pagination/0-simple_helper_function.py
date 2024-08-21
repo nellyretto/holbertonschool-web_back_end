@@ -4,7 +4,7 @@
 from typing import Tuple
 
 
-def index_range(page, page_size) -> tuple:
+def index_range(page, page_size) -> Tuple:
     """
     Returns the start and end index of a given page in a pagination system.
 
