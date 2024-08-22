@@ -4,6 +4,7 @@ import pymongo
 
 
 def insert_school(mongo_collection, **kwargs):
+
     """
     Insert a new document into the specified MongoDB collection.
 
@@ -18,5 +19,4 @@ def insert_school(mongo_collection, **kwargs):
     """
 
     new_doc = mongo_collection.insert(kwargs)
-
     return new_doc.inserted_id
