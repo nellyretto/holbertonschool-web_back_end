@@ -1,8 +1,7 @@
 //inserting document in collection
 use school
 
-insertOne(
-    {
+db.mongosh.insertOne({
         name: "Holberton school"
     }
 )
