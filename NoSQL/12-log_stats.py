@@ -7,7 +7,7 @@ provides some stats about Nginx
 
 from pymongo import MongoClient
 
-def getnginxstats():
+def get_nginx_stats():
     """
     Connects to the MongoDB database
     """
@@ -15,7 +15,7 @@ def getnginxstats():
     db = client.logs
     collection = db.nginx
 
-    totallogs = collection.countdocuments({})
+    total_logs = collection.count_documents({})
 
     methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
     method_counts = {method: collection.count_documents({"method": method}) for method in methods}
@@ -28,5 +28,5 @@ def getnginxstats():
         print(f"\tmethod {method}: {method_counts[method]}")
     print(f"{status_check} status check")
 
-if __name == "__main":
+if __name__ == "__main__":
     get_nginx_stats()
