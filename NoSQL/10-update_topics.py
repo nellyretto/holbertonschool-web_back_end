@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-"""import pymongo"""
-import pymongo
-
-
 def update_topics(mongo_collection, name, topics):
     """
     Update the topics field for documents in the given mongo_collection
@@ -19,6 +15,6 @@ def update_topics(mongo_collection, name, topics):
         None
     """
     mongo_collection.update_many(
-        {name: "name"},
+        {"name": name},
         {"$set": {"topics": topics}},
     )
