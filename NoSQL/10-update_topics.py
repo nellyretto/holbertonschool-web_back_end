@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+"""module for bang"""
+
 def update_topics(mongo_collection, name, topics):
     """
     Update the topics field for documents in the given mongo_collection
