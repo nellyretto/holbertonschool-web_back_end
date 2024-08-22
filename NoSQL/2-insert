@@ -1,0 +1,8 @@
+//inserting document in collection
+use school
+
+insertOne(
+    {
+        name: "Holberton school"
+    }
+)
