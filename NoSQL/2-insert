@@ -1,7 +1,5 @@
 //inserting document in collection
-use school
-
-db.mongo.insertOne({
+db.school.insertOne({
         name: "Holberton school"
     }
 )
